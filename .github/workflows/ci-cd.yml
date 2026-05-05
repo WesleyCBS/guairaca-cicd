@@ -46,7 +46,7 @@ jobs:
 
     steps:
       - name: Checkout do Código
-        uses: action/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Configurar Github Pages
         uses: actions/configure-pages@v4
