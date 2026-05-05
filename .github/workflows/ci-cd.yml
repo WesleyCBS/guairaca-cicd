@@ -45,17 +45,17 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-    - name: Checkout do Código
-      uses: action/checkout@v4
+      - name: Checkout do Código
+        uses: action/checkout@v4
 
-    - name: Configurar Github Pages
-      uses: actions/configure-pages@v4
+      - name: Configurar Github Pages
+        uses: actions/configure-pages@v4
 
-    - name: Empacotar artefato
-      uses: action/upload-pages-artifact@v3
-      with:
-        path: '.'
+      - name: Empacotar artefato
+        uses: action/upload-pages-artifact@v3
+        with:
+          path: '.'
 
-    - name: Publicar no Github pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+      - name: Publicar no Github pages
+        id: deployment
+        uses: actions/deploy-pages@v4
