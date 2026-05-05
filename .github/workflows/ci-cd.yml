@@ -44,7 +44,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
-  steps:
+    steps:
     - name: Checkout do Código
       uses: action/checkout@v4
 
